@@ -36,6 +36,18 @@ select {
   gap: 20px;
 }
 
+@media  (max-width:400px ) {
+  .header{
+    font-size: 10px;
+  }
+ .buttons{
+  flex-direction: row;
+ }
+ .header button{
+padding:5px ;
+font-size: 10px;
+ }
+}
 .header button {
   text-decoration: none;
   padding: 15px;
