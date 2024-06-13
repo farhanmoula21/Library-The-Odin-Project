@@ -47,6 +47,8 @@ select {
 padding:5px ;
 font-size: 10px;
  }
+
+
 }
 .header button {
   text-decoration: none;
@@ -180,7 +182,7 @@ input#read + span::before {
   border: 3px solid #d19a52;
   border-radius: 4px;
   color: #cbe72bcc;
-  width: 280px;
+  width: 250px;
   height: 360px;
   padding: 30px;
   background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 0, 0)),

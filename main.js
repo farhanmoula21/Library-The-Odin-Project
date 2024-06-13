@@ -32,7 +32,7 @@ function addBookToLibrary(title, author, pages, read) {
 
 
 //Creating book
-function createBook(title, pages, author, read, bookId) {
+function createBook(title, author,pages, read, bookId) {
   const divBook = document.createElement("div");
   const divTitle = document.createElement("div");
   const bookData = document.createElement("ul");
@@ -62,8 +62,8 @@ function createBook(title, pages, author, read, bookId) {
   bookData.appendChild(pagesLi);
   bookData.appendChild(readLi);
   divTitle.textContent = title;
-  authorLi.textContent = "Author: ";
   pagesLi.textContent = "Pages: ";
+  authorLi.textContent = "Author: ";
   readLi.textContent = "Read: ";
   deleteButton.textContent = "✖";
 
@@ -75,7 +75,7 @@ function createBook(title, pages, author, read, bookId) {
   spanPages.textContent = pages;
   spanRead.textContent = read;
 
-  // Adding Deletefunctioality
+  // Adding Delete functioality
   deleteButton.addEventListener("click", () => {
     myLibrary.splice(bookId, 1);
     updateBooks();
